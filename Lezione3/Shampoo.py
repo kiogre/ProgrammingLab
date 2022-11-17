@@ -3,6 +3,6 @@ def sum_csv(file_name):
     file = open(file_name, 'r')
     for line in file:
         elements = line.split(',')
-        if elements[0] != 'Date':
+        if elements[0] != 'Date' or elements[1] == None:
             tot = tot + float(elements[1])
     return tot
