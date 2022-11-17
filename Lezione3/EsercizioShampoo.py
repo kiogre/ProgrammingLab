@@ -4,5 +4,5 @@ def sum_csv(file_name):
     for line in file:
         elements = line.split(',')
         if elements[0] != 'Date':
-            tot = tot + float(elements[0])
+            tot = tot + float(elements[1])
     return tot
