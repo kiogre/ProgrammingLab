@@ -6,5 +6,4 @@ class CSVFile():
         lista = []
         for line in file:
             elements = line.split(',')
-            if elements[0] != 'Date':
-                lista.append(elements)
+            lista.append(elements)
