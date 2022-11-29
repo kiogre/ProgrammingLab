@@ -40,7 +40,7 @@ class CSVFile:
             return data
 
 class NumericalCSVFile(CSVFile):
-    def get_data(self)
+    def get_data(self, start = None, end = None)
         string_data = super().get_data()
         numerical_data = []
         for string_row in string_data:
